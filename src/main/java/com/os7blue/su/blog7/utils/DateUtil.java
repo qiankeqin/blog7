@@ -5,7 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
-* @Description:    处理日期格式的工具类
+* @Description:    处理日期格式的工具类 鉴于sqlite的约束，可选用直接储存时间戳，或者储存转换过的localtime字符串（可能需要设置服务器时区/地区）
+                   做归档处理是会模糊查询日期，所以具体hh:ss:mm的格式不影响查询。
 * @Author:         os7blue
 * @CreateDate:     Create by 18-8-25 下午8:16
 * @UpdateUser:     os7blue
