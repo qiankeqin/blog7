@@ -1,8 +1,8 @@
-package com.os7blue.os7blueindex.service;
+package com.os7blue.su.blog7.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.os7blue.os7blueindex.util.Goble;
+import com.os7blue.su.blog7.utils.BaseUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
@@ -55,8 +55,13 @@ public class BaseService {
         sender.send(message);
     }
 
+    /**
+     * 根据用户ip地址获取具体的国家地区isp服务商信息
+     * @param ipAddress
+     * @return
+     */
     public String getIpMessage(String ipAddress) {
-        String message = Goble.getIpMessage(ipAddress);
+        String message = BaseUtils.getIpMessage(ipAddress);
         JSONObject ipMessage = JSON.parseObject(message);
         JSONObject im = JSONObject.parseObject(ipMessage.getString("data"));
         return (im.getString("country") + im.getString("region") + im.getString("city") + im.getString("isp"));
