@@ -24,6 +24,6 @@ public class PageController {
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String gotoIndex(){
         System.out.println(123);
-        return "/index/index.html";
+        return "/page/index.html";
     }
 }
