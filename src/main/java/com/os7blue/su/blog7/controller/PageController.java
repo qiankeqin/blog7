@@ -26,4 +26,9 @@ public class PageController {
         System.out.println(123);
         return "/page/index.html";
     }
+
+    @RequestMapping(value = "/comment")
+    public String gotoComment(){
+        return "/page/comment.html";
+    }
 }

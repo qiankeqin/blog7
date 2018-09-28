@@ -2,7 +2,6 @@ package com.os7blue.su.blog7.entity;
 
 import lombok.Data;
 
-import java.util.List;
 
 /**
  * @Description:    文章实体
@@ -25,6 +24,10 @@ public class Post {
     private String title;
 
     private String content;
+
+    private long updateTime;
+
+    private String author;
 
     /**
      * emmmmmm 让我再想想 今天就到这里

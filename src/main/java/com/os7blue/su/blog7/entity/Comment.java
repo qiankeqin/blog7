@@ -14,7 +14,12 @@ import lombok.Data;
 @Data
 public class Comment {
 
-    private Long timeId;
+    private long timeId;
+
+    /**
+     * 回复所用
+     */
+    private String reply;
 
     private String email;
 
@@ -24,7 +29,9 @@ public class Comment {
 
     private String nickName;
 
-    private String postId;
+    private long postId;
+
+    private String longId;
 
     /**
      * 回复评论是否发送邮件提醒，0为不发，1为发送。默认为0
