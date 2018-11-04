@@ -23,7 +23,6 @@ public class PageController {
      */
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String gotoIndex(){
-        System.out.println(123);
         return "/page/index.html";
     }
 

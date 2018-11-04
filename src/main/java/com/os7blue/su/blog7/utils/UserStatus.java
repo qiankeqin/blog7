@@ -19,7 +19,7 @@ public class UserStatus {
     /**
      * session中所储存的用户信息标识
      */
-    private static final String USER_STATE_NAME = "userState";
+    private static final String USER_STATE_NAME = "os7blue.com";
 
     /**
      * 保存/移除用户登录状态
