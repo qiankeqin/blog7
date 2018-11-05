@@ -1,6 +1,7 @@
 package com.os7blue.su.blog7.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @CreateDate:     Create by 2018/9/10 19:52
  * @UpdateUser:     os7blue
  * @UpdateDate:     Update by 2018/9/10 19:52
- * @UpdateRemark:   
+ * @UpdateRemark:
  * @Version:        1.0
  */
 @Controller
@@ -23,11 +24,36 @@ public class PageController {
      */
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String gotoIndex(){
-        return "/page/index.html";
+        return "index.html";
     }
 
-    @RequestMapping(value = "/comment")
-    public String gotoComment(){
-        return "/page/comment.html";
+    @RequestMapping(value = "/about",method = RequestMethod.GET)
+    public String gotoAbout(){
+        return "about.html";
     }
+
+    @RequestMapping(value = "/blog",method = RequestMethod.GET)
+    public String gotoBlog(){
+        return "blog.html";
+    }
+
+    @RequestMapping(value = "/blog-details",method = RequestMethod.GET)
+    public String gotoBlogDetails(){
+        return "blog-details.html";
+    }
+
+    @RequestMapping(value = "/contact",method = RequestMethod.GET)
+    public String gotoContact(){
+        return "contact.html";
+    }
+
+    @RequestMapping(value = "/works-details",method = RequestMethod.GET)
+    public String gotoWorksDetails(){
+        return "works-details.html";
+    }
+
+
+
+
+
 }
