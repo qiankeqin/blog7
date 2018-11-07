@@ -1,7 +1,6 @@
 package com.os7blue.su.blog7.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class PageController {
-
 
     /**
      * 默认访问主页
