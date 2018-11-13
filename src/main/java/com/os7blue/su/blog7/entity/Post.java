@@ -27,8 +27,7 @@ public class Post {
 
     private long updateTime;
 
-    private String author;
-
+    private String tags;
     /**
      * emmmmmm 让我再想想 今天就到这里
      */
