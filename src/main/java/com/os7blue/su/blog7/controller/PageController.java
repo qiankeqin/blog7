@@ -1,15 +1,8 @@
 package com.os7blue.su.blog7.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @Description:    用作页面跳转之用 图个方便省事
@@ -44,19 +37,29 @@ public class PageController {
         return "about";
     }
 
-    @RequestMapping(value = "/blog",method = RequestMethod.GET)
-    public String gotoBlog(){
-        return "blog";
+    @RequestMapping(value = "/gbook",method = RequestMethod.GET)
+    public String gotoGbook(){
+        return "gbook";
     }
 
-    @RequestMapping(value = "/contact",method = RequestMethod.GET)
-    public String gotoContact(){
-        return "contact";
+    @RequestMapping(value = "/info",method = RequestMethod.GET)
+    public String gotoInfo(){
+        return "info";
     }
 
-    @RequestMapping(value = "/works-details",method = RequestMethod.GET)
-    public String gotoWorksDetails(){
-        return "works-details";
+    @RequestMapping(value = "/infopic",method = RequestMethod.GET)
+    public String gotoInfoPic(){
+        return "infopic";
+    }
+
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public String gotoList(){
+        return "list";
+    }
+
+    @RequestMapping(value = "/share",method = RequestMethod.GET)
+    public String gotoShare(){
+        return "share";
     }
 
 

@@ -1,47 +1,15 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="gbk">
-<title>Ê×Ò³_ÑîÇà¸öÈË²©¿Í - Ò»¸öÕ¾ÔÚwebÇ°¶ËÉè¼ÆÖ®Â·µÄÅ®¼¼ÊõÔ±¸öÈË²©¿ÍÍøÕ¾</title>
-<meta name="keywords" content="¸öÈË²©¿Í,ÑîÇà¸öÈË²©¿Í,¸öÈË²©¿ÍÄ£°å,ÑîÇà" />
-<meta name="description" content="ÑîÇà¸öÈË²©¿Í£¬ÊÇÒ»¸öÕ¾ÔÚwebÇ°¶ËÉè¼ÆÖ®Â·µÄÅ®³ÌÐòÔ±¸öÈËÍøÕ¾£¬Ìá¹©¸öÈË²©¿ÍÄ£°åÃâ·Ñ×ÊÔ´ÏÂÔØµÄ¸öÈËÔ­´´ÍøÕ¾¡£" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/base.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
-<link href="css/m.css" rel="stylesheet">
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/hc-sticky.js"></script>
-<script type="text/javascript" src="js/comm.js"></script>
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-</head>
-<body>
-<header class="header-navigation" id="header">
-  <nav><div class="logo"><a href="/">ÑîÇà¸öÈË²©¿Í</a></div>
-    <h2 id="mnavh"><span class="navicon"></span></h2>
-    <ul id="starlist">
-      <li><a href="index.ftl">ÍøÕ¾Ê×Ò³</a></li>
-      <li><a href="share.ftl">ÎÒµÄÏà²á</a></li>
-      <li><a href="list.ftl">ÎÒµÄÈÕ¼Ç</a></li>
-      <li><a href="about.ftl">¹ØÓÚÎÒ</a></li>
-      <li><a href="gbook.ftl">ÁôÑÔ</a></li>
-      <li><a href="info.ftl">ÄÚÈÝÒ³</a></li>
-      <li><a href="infopic.ftl">ÄÚÈÝÒ³</a></li>
-    </ul>
-</nav>
-</header>
+<#include "header.ftl">
 <article>
   <aside class="l_box">
     <div class="about_me">
-      <h2>¹ØÓÚÎÒ</h2>
+      <h2>å…³äºŽæˆ‘</h2>
       <ul>
         <i><img src="images/4.jpg"></i>
-        <p><b>ÑîÇà</b>£¬Ò»¸ö80ºó²Ý¸ùÅ®Õ¾³¤£¡09ÄêÈëÐÐ¡£Ò»Ö±Ç±ÐÄÑÐ¾¿webÇ°¶Ë¼¼Êõ£¬Ò»±ß¹¤×÷Ò»±ß»ýÀÛ¾­Ñé£¬·ÖÏíÒ»Ð©¸öÈË²©¿ÍÄ£°å£¬ÒÔ¼°SEOÓÅ»¯µÈÐÄµÃ¡£</p>
+        <p><b>os7blue</b>ï¼Œä¸€ä¸ª80åŽè‰æ ¹ç«™é•¿ï¼09å¹´å…¥è¡Œã€‚ä¸€ç›´æ½œå¿ƒç ”ç©¶webå‰ç«¯æŠ€æœ¯ï¼Œä¸€è¾¹å·¥ä½œä¸€è¾¹ç§¯ç´¯ç»éªŒï¼Œåˆ†äº«ä¸€äº›ä¸ªäººåšå®¢æ¨¡æ¿ï¼Œä»¥åŠSEOä¼˜åŒ–ç­‰å¿ƒå¾—ã€‚</p>
       </ul>
     </div>
     <div class="wdxc">
-      <h2>ÎÒµÄÏà²á</h2>
+      <h2>æˆ‘çš„ç›¸å†Œ</h2>
       <ul>
         <li><a href="/"><img src="images/7.jpg"></a></li>
         <li><a href="/"><img src="images/8.jpg"></a></li>
@@ -53,24 +21,24 @@
     </div>
      <div class="search">
       <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
-        <input name="keyboard" id="keyboard" class="input_text" value="ÇëÊäÈë¹Ø¼ü×Ö´Ê" style="color: rgb(153, 153, 153);" onfocus="if(value=='ÇëÊäÈë¹Ø¼ü×Ö´Ê'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='ÇëÊäÈë¹Ø¼ü×Ö´Ê'}" type="text">
+        <input name="keyboard" id="keyboard" class="input_text" value="è¯·è¾“å…¥å…³é”®å­—è¯" style="color: rgb(153, 153, 153);" onfocus="if(value=='è¯·è¾“å…¥å…³é”®å­—è¯'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='è¯·è¾“å…¥å…³é”®å­—è¯'}" type="text">
         <input name="show" value="title" type="hidden">
         <input name="tempid" value="1" type="hidden">
         <input name="tbname" value="news" type="hidden">
-        <input name="Submit" class="input_submit" value="ËÑË÷" type="submit">
+        <input name="Submit" class="input_submit" value="æœç´¢" type="submit">
       </form>
     </div>
     <div class="fenlei">
-      <h2>ÎÄÕÂ·ÖÀà</h2>
+      <h2>æ–‡ç« åˆ†ç±»</h2>
       <ul>
-        <li><a href="/">Ñ§ÎÞÖ¹¾³£¨33£©</a></li>
-        <li><a href="/">ÈÕ¼Ç£¨19£©</a></li>
-        <li><a href="/">ÂýÉú»î£¨520£©</a></li>
-        <li><a href="/">ÃÀÎÄÐÀÉÍ£¨40£©</a></li>
+        <li><a href="/">å­¦æ— æ­¢å¢ƒï¼ˆ33ï¼‰</a></li>
+        <li><a href="/">æ—¥è®°ï¼ˆ19ï¼‰</a></li>
+        <li><a href="/">æ…¢ç”Ÿæ´»ï¼ˆ520ï¼‰</a></li>
+        <li><a href="/">ç¾Žæ–‡æ¬£èµï¼ˆ40ï¼‰</a></li>
       </ul>
     </div>
     <div class="guanzhu">
-      <h2>¹Ø×¢ÎÒ Ã´Ã´ßÕ</h2>
+      <h2>å…³æ³¨æˆ‘ ä¹ˆä¹ˆå“’</h2>
       <ul>
         <img src="images/wx.jpg">
       </ul>
@@ -80,51 +48,51 @@
 <div class="gbook">
       <div class="fb">
         <ul>
-          <p class="fbtime"><span> 2018-07-21 </span> Ò¹ÔÂ¹éÍ¾</p>
-          <p class="fbinfo">´ÓÇà½ãÅóÓÑÈ¦·ÖÏíµÄÎÄÕÂ¡¶ÎÒÎªÊ²Ã´Òª×ö¸öÈËÍøÕ¾¡·¹ýÀ´µÄ£¬×ÔÏ°¿´ÁËÏÂÄãµÄÍøÕ¾·Ç³£²»´í£¬¿´µÄ³öÀ´ÄãÒ»Ö±ÔÚ¼á³Ö!</p>
+          <p class="fbtime"><span> 2018-07-21 </span> å¤œæœˆå½’é€”</p>
+          <p class="fbinfo">ä»Žé’å§æœ‹å‹åœˆåˆ†äº«çš„æ–‡ç« ã€Šæˆ‘ä¸ºä»€ä¹ˆè¦åšä¸ªäººç½‘ç«™ã€‹è¿‡æ¥çš„ï¼Œè‡ªä¹ çœ‹äº†ä¸‹ä½ çš„ç½‘ç«™éžå¸¸ä¸é”™ï¼Œçœ‹çš„å‡ºæ¥ä½ ä¸€ç›´åœ¨åšæŒ!</p>
         </ul>
       </div>
       <div class="hf">
         <ul>
-          <p class="zzhf"><font color="#FF0000">Õ¾³¤»Ø¸´:</font>¸ÐÐ»Åõ³¡°¡£¡¿´ÁËÄãµÄÍøÕ¾£¬ÓÐÁ½¸öÔÂÃ»¸üÐÂÁËÅ¶~</p>
+          <p class="zzhf"><font color="#FF0000">ç«™é•¿å›žå¤:</font>æ„Ÿè°¢æ§åœºå•Šï¼çœ‹äº†ä½ çš„ç½‘ç«™ï¼Œæœ‰ä¸¤ä¸ªæœˆæ²¡æ›´æ–°äº†å“¦~</p>
         </ul>
       </div>
       <div class="fb">
         <ul>
-          <p class="fbtime"><span> 2018-07-10 </span> ÖÜºê</p>
-          <p class="fbinfo">¶Á¡¶´Ó½ñÈÕÆð£¬ÎÒÓÀ¾ÃÐ¶ÔØ½ñÈÕÍ·Ìõ¡·ÓÐ¸Ð¡£ÕýÈç×÷ÕßËùËµ£¬Õâ¸öAPP×¥×¡ÁËºÜ¶àÈËÐÔµÄÌØµã£¬ÔÚ¼òµ¥¡¢ÖØ¸´¡¢Ë¬ÕâÈýµãÉÏ×öµ½ÁË¼«ÖÂ¡£µ«ÊÇÎÒÈÏÎªÓÀ¾ÃÐ¶ÔØÕâ¸öÏë·¨±È½Ï»Äµ®£¬ÈÎºÎ¶«Î÷ÄãÖ»ÒªÓÐ×Ô¿ØÁ¦£¬¾ÍÄÜ½«ËüÎªÎÒËùÓÃ¡£Ôø¾­Ò»¶ÈÎÒÒ²ÊÇË¢Í·Ìõ¸ù±¾Í£²»ÏÂÀ´</p>
+          <p class="fbtime"><span> 2018-07-10 </span> å‘¨å®</p>
+          <p class="fbinfo">è¯»ã€Šä»Žä»Šæ—¥èµ·ï¼Œæˆ‘æ°¸ä¹…å¸è½½ä»Šæ—¥å¤´æ¡ã€‹æœ‰æ„Ÿã€‚æ­£å¦‚ä½œè€…æ‰€è¯´ï¼Œè¿™ä¸ªAPPæŠ“ä½äº†å¾ˆå¤šäººæ€§çš„ç‰¹ç‚¹ï¼Œåœ¨ç®€å•ã€é‡å¤ã€çˆ½è¿™ä¸‰ç‚¹ä¸Šåšåˆ°äº†æžè‡´ã€‚ä½†æ˜¯æˆ‘è®¤ä¸ºæ°¸ä¹…å¸è½½è¿™ä¸ªæƒ³æ³•æ¯”è¾ƒè’è¯žï¼Œä»»ä½•ä¸œè¥¿ä½ åªè¦æœ‰è‡ªæŽ§åŠ›ï¼Œå°±èƒ½å°†å®ƒä¸ºæˆ‘æ‰€ç”¨ã€‚æ›¾ç»ä¸€åº¦æˆ‘ä¹Ÿæ˜¯åˆ·å¤´æ¡æ ¹æœ¬åœä¸ä¸‹æ¥</p>
         </ul>
       </div>
       <div class="hf">
         <ul>
-          <p class="zzhf"><font color="#FF0000">Õ¾³¤»Ø¸´:</font>àÅ£¬ÎÒÒ²ÊÇ×ÔÖÆÁ¦ÓÐÏÞ£¬É¾³ýÍ·Ìõ¾ÍÊÇ½ÃÍ÷¹ýÕý¶øÒÑ£¬Õâ¸öÒòÈË¶øÒì£¬²»Ç¿ÇóËûÈË£¬Ò²²»Ïë±êÌâµ³¡£</p>
+          <p class="zzhf"><font color="#FF0000">ç«™é•¿å›žå¤:</font>å—¯ï¼Œæˆ‘ä¹Ÿæ˜¯è‡ªåˆ¶åŠ›æœ‰é™ï¼Œåˆ é™¤å¤´æ¡å°±æ˜¯çŸ«æž‰è¿‡æ­£è€Œå·²ï¼Œè¿™ä¸ªå› äººè€Œå¼‚ï¼Œä¸å¼ºæ±‚ä»–äººï¼Œä¹Ÿä¸æƒ³æ ‡é¢˜å…šã€‚</p>
         </ul>
       </div>
       <div class="fb">
         <ul>
-          <p class="fbtime"><span> 2018-07-09 </span> ÎÄÓ±</p>
-          <p class="fbinfo">¼ÓÓÍß¹</p>
+          <p class="fbtime"><span> 2018-07-09 </span> æ–‡é¢–</p>
+          <p class="fbinfo">åŠ æ²¹å–</p>
         </ul>
       </div>
       <div class="hf">
         <ul>
-          <p class="zzhf"><font color="#FF0000">Õ¾³¤»Ø¸´:</font>¸ÐÐ»µÚÒ»ÌõÁôÑÔµÄÖ§³Ö£¡£º£©</p>
+          <p class="zzhf"><font color="#FF0000">ç«™é•¿å›žå¤:</font>æ„Ÿè°¢ç¬¬ä¸€æ¡ç•™è¨€çš„æ”¯æŒï¼ï¼šï¼‰</p>
         </ul>
       </div>
       <div class="gbox">
         <form action="../../enews/index.php" method="post" name="form1" id="form1">
-          <p> <strong>À´Ëµµã¶ùÊ²Ã´°É...</strong></p>
-          <p><span> ÄúµÄÐÕÃû:</span>
+          <p> <strong>æ¥è¯´ç‚¹å„¿ä»€ä¹ˆå§...</strong></p>
+          <p><span> æ‚¨çš„å§“å:</span>
             <input name="name" type="text" id="name">
             *</p>
-          <p><span>ÁªÏµÓÊÏä:</span>
+          <p><span>è”ç³»é‚®ç®±:</span>
             <input name="email" type="text" id="email">
             *</p>
-          <p><span class="tnr">ÁôÑÔÄÚÈÝ:</span>
+          <p><span class="tnr">ç•™è¨€å†…å®¹:</span>
             <textarea name="lytext" cols="60" rows="12" id="lytext"></textarea>
           </p>
           <p>
-            <input type="submit" name="Submit3" value="Ìá½»">
+            <input type="submit" name="Submit3" value="æäº¤">
             <input name="enews" type="hidden" id="enews" value="AddGbook">
           </p>
         </form>
@@ -132,9 +100,4 @@
     </div>
   </main>
 </article>
-<footer>
-  <p>Design by <a href="http://www.yangqq.com" target="_blank">ÑîÇà¸öÈË²©¿Í</a> <a href="/">ÊñICP±¸11002373ºÅ-1</a></p>
-</footer>
-<a href="#" class="cd-top">Top</a>
-</body>
-</html>
+<#include "footer.ftl">
