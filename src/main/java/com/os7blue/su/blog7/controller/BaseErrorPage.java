@@ -6,6 +6,8 @@ import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @RequestMapping("/error")
 public class BaseErrorPage implements ErrorController {
@@ -15,11 +17,11 @@ public class BaseErrorPage implements ErrorController {
     @Override
     public String getErrorPath() {
         logger.info("进入自定义错误页面");
-        return "error.html";
+        return "error";
     }
 
     @RequestMapping
-    public String error() {
+    public String error(HttpServletRequest request) {
         return getErrorPath();
     }
 

@@ -27,34 +27,36 @@ public class PageController {
      * 默认访问主页
      * @return
      */
+
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String gotoIndex(){
-        return "index.html";
+        return "index";
     }
+
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String gotoInde(){
+        return "index";
+    }
+
 
     @RequestMapping(value = "/about",method = RequestMethod.GET)
     public String gotoAbout(){
-        return "about.html";
+        return "about";
     }
 
     @RequestMapping(value = "/blog",method = RequestMethod.GET)
     public String gotoBlog(){
-        return "blog.html";
-    }
-
-    @RequestMapping(value = "/blog-details",method = RequestMethod.GET)
-    public String gotoBlogDetails(){
-        return "blog-details.html";
+        return "blog";
     }
 
     @RequestMapping(value = "/contact",method = RequestMethod.GET)
     public String gotoContact(){
-        return "contact.html";
+        return "contact";
     }
 
     @RequestMapping(value = "/works-details",method = RequestMethod.GET)
     public String gotoWorksDetails(){
-        return "works-details.html";
+        return "works-details";
     }
 
 
