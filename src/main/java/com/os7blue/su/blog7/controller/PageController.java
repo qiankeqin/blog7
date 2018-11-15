@@ -1,8 +1,18 @@
 package com.os7blue.su.blog7.controller;
 
+import com.os7blue.su.blog7.entity.Post;
+import com.os7blue.su.blog7.service.PostService;
+import javafx.geometry.Pos;
+import lombok.var;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Description:    用作页面跳转之用 图个方便省事
@@ -16,18 +26,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class PageController {
 
+    @Autowired
+    private PostService postService;
     /**
      * 默认访问主页
      * @return
      */
 
     @RequestMapping(value = "/",method = RequestMethod.GET)
-    public String gotoIndex(){
+    public String gotoIndex(Map<String,Object> model){
+        List<Post> list = postService.getSimplePostList();
+        System.err.println(list.size());
+        model.put("postList",list);
         return "index";
     }
 
     @RequestMapping(value = "/index",method = RequestMethod.GET)
-    public String gotoInde(){
+    public String gotoInde(Map<String,Object> model){
+        List<Post> list = postService.getSimplePostList();
+        System.err.println(list.size());
+        model.put("postList",list);
         return "index";
     }
 
@@ -42,8 +60,10 @@ public class PageController {
         return "gbook";
     }
 
-    @RequestMapping(value = "/info",method = RequestMethod.GET)
-    public String gotoInfo(){
+    @RequestMapping(value = "/article/{cid}",method = RequestMethod.GET)
+    public String gotoInfo(@PathVariable Integer cid,Map<String,Object> model){
+        Post post = postService.getPostContent(cid);
+        model.put("content",post);
         return "info";
     }
 

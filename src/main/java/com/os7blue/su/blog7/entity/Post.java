@@ -25,6 +25,8 @@ public class Post {
 
     private String content;
 
+    private String titleImgUrl = "http://tale.os7blue.com/upload/2017/11/27ul4ttsj2i2grv58ksnjbfmnh.png";
+
     private long updateTime;
 
     private String tags;

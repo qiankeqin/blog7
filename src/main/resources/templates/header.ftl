@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- 升级所有请求为https -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <#--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
     <title>首页_os7blue个人博客 - 一个站在web前端设计之路的技术员个人博客网站</title>
     <meta name="keywords" content="个人博客,os7blue个人博客,个人博客模板,os7blue" />
     <meta name="description" content="os7blue个人博客，是一个站在web前端设计之路的程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
@@ -27,8 +27,6 @@
             <li><a href="/list">我的日记</a></li>
             <li><a href="/about">关于我</a></li>
             <li><a href="/gbook">留言</a></li>
-            <li><a href="/info">内容页</a></li>
-            <li><a href="/infopic">内容页</a></li>
         </ul>
     </nav>
 </header>
