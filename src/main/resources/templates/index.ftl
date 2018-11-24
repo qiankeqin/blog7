@@ -1,46 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>首页-杨青青个人博客模板主题《今夕何夕》</title>
-<meta name="keywords" content="blog" />
-<meta name="description" content="blog" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/base.css" rel="stylesheet">
-<link href="css/m.css" rel="stylesheet">
-<script src="js/jquery-1.8.3.min.js" ></script>
-<script src="js/comm.js"></script>
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-</head>
-<body>
-<!--top begin-->
-<header id="header">
-  <div class="navbox">
-    <h2 id="mnavh"><span class="navicon"></span></h2>
-    <div class="logo"><a href="http://www.yangqq.com">杨青青个人博客</a></div>
-    <nav>
-      <ul id="starlist">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="list.html">个人博客日记</a></li>
-        <li class="menu"><a href="list2.html">博客网站制作</a>
-          <ul class="sub">
-            <li><a href="/6">推荐工具</a></li>
-            <li><a href="/7">JS经典实例</a></li>
-            <li><a href="/8">网站建设</a></li>
-            <li><a href="/7">CSS3|Html5</a></li>
-            <li><a href="/8">心得笔记</a></li>
-          </ul>
-          <span></span></li>
-        <li><a href="list3.html">网页设计心得</a></li>
-        <li><a href="daohang.html">优秀个人博客</a></li>
-        <li><a href="about.html">关于我</a></li>
-      </ul>
-    </nav>
-    <div class="searchico"></div>
-  </div>
-</header>
+<#include "header.ftl">
 <div class="searchbox">
   <div class="search">
     <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
@@ -302,14 +260,14 @@
   <div class="rbox">
     <div class="card">
       <h2>我的名片</h2>
-      <p>网名：DanceSmile | 即步非烟</p>
-      <p>职业：Web前端设计师、网页设计</p>
-      <p>现居：四川省-成都市</p>
-      <p>Email：dancesmiling@qq.com</p>
+      <p>网名：os7blue</p>
+      <p>职业：web后端工程师</p>
+      <p>现居：北京—海淀</p>
+      <p>Email：os7blue@163.com</p>
       <ul class="linkmore">
         <li><a href="http://www.yangqq.com" target="_blank" class="iconfont icon-zhuye" title="网站地址"></a></li>
         <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HHh9cn95b3F1cHVye1xtbTJ-c3E" target="_blank" class="iconfont icon-youxiang" title="我的邮箱"></a></li>
-        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=476847113&site=qq&menu=yes" target="_blank" class="iconfont icon---" title="QQ联系我"></a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=627798157&site=qq&menu=yes" target="_blank" class="iconfont icon---" title="QQ联系我"></a></li>
         <li id="weixin"><a href="#" target="_blank" class="iconfont icon-weixin" title="关注我的微信"></a><i><img src="images/wx.png"></i></li>
       </ul>
     </div>
@@ -407,23 +365,4 @@
     </div>
   </div>
 </article>
-<footer>
-  <div class="box">
-    <div class="wxbox">
-      <ul>
-        <li><img src="images/wxgzh.jpg"><span>微信公众号</span></li>
-        <li><img src="images/wx.png"><span>我的微信</span></li>
-      </ul>
-    </div>
-    <div class="endnav">
-      <p><b>站点声明：</b></p>
-      <p>1、本站个人博客模板，均为杨青青本人设计，个人可以使用，但是未经许可不得用于任何商业目的。</p>
-      <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HHh9cn95b3F1cHVye1xtbTJ-c3E" target="_blank">dacesmiling@qq.com</a></p>
-      <p>Copyright © <a href="http://www.yangqq.com" target="_blank">www.yangqq.com</a> All Rights Reserved. 备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a></p>
-    </div>
-  </div>
-  <a href="#">
-  <div class="top"></div>
-  </a> </footer>
-</body>
-</html>
+<#include "footer.ftl">
