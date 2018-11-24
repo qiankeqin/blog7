@@ -1,6 +1,8 @@
 package com.os7blue.su.blog7.controller;
 
+import com.os7blue.su.blog7.entity.Options;
 import com.os7blue.su.blog7.entity.Post;
+import com.os7blue.su.blog7.service.LoadService;
 import com.os7blue.su.blog7.service.PostService;
 import javafx.geometry.Pos;
 import lombok.var;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.xml.soap.SAAJResult;
 import java.util.List;
 import java.util.Map;
 
@@ -28,16 +31,19 @@ public class PageController {
 
     @Autowired
     private PostService postService;
+
+    @Autowired
+    private LoadService loadService;
     /**
      * 默认访问主页
      * @return
      */
 
+
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String gotoIndex(Map<String,Object> model){
-        List<Post> list = postService.getSimplePostList();
-        System.err.println(list.size());
-        model.put("postList",list);
+        var postlist = postService.getSimplePostList();
+        model.put("postList",postlist);
         return "index";
     }
 
@@ -60,7 +66,7 @@ public class PageController {
         return "gbook";
     }
 
-    @RequestMapping(value = "/article/{cid}",method = RequestMethod.GET)
+    @RequestMapping(value = "article/{cid}",method = RequestMethod.GET)
     public String gotoInfo(@PathVariable Integer cid,Map<String,Object> model){
         Post post = postService.getPostContent(cid);
         model.put("content",post);
