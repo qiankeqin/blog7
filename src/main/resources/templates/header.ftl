@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>首页-杨青青个人博客模板主题《今夕何夕》</title>
+    <title>os7blue</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="keywords" content="blog" />
     <meta name="description" content="blog" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
 <header id="header">
     <div class="navbox">
         <h2 id="mnavh"><span class="navicon"></span></h2>
-        <div class="logo"><a href="http://www.yangqq.com">杨青青个人博客</a></div>
+        <div class="logo"><a href="http://os7blue.com">os7blue个人博客</font></a></div>
         <nav>
             <ul id="starlist">
                 <li><a href="/index">首页</a></li>
@@ -41,3 +42,42 @@
         <div class="searchico"></div>
     </div>
 </header>
+<script type="text/javascript">
+    /*鼠标特效 */
+    function co(){
+        var colorElements = "0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f";
+        var colorArray = colorElements.split(",");
+        var color ="#";
+        for(var i =0;i<6;i++){
+            color+=colorArray[Math.floor(Math.random()*16)];
+        }
+        return color;
+    };
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("Hello基佬","你再点", "你继续点", "你有本事接着点", "有种你还点", "快别他妈点了", "好好看文章不行吗");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                    y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": co()
+            });
+            $("body").append($i);
+            $i.animate({
+                        "top": y - 180,
+                        "opacity": 0
+                    },
+                    1500,
+                    function() {
+                        $i.remove();
+                    });
+        });
+    });
+</script>

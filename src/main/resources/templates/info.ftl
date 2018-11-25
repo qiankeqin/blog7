@@ -22,13 +22,13 @@
             </h2>
             <h1 class="con_tilte">个人博客，属于我的小世界！</h1>
             <p class="bloginfo"><i class="avatar"><img
-                    src="images/avatar.jpg"></i><span>杨青青</span><span>2018-10-28</span><span>【<a
+                    src="images/avatar.jpg"></i><span>os7blue</span><span>2018-10-28</span><span>【<a
                     href="/">程序人生</a>】</span><span>109990人已围观</span></p>
             <p class="con_info"><b>简介</b>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
             </p>
             <div class="con_text">
                 ${post.content}
-                <p class="share"><b>转载：</b>感谢您对杨青青个人博客网站平台的认可，以及对我们原创作品以及文章的青睐，非常欢迎各位朋友分享到个人站长或者朋友圈，但转载请说明文章出处“来源杨青个人博客”。
+                <p class="share"><b>转载：</b>感谢您对os7blue个人博客网站平台的认可，以及对我们原创作品以及文章的青睐，非常欢迎各位朋友分享到个人站长或者朋友圈，但转载请说明文章出处“来源杨青个人博客”。
                 </p>
                 <p><span class="diggit">很赞哦！ (74)</span></p>
                 <div class="nextinfo">

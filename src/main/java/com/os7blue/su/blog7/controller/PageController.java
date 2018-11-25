@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -65,7 +64,7 @@ public class PageController {
         return "daohang";
     }
 
-    @RequestMapping(value = "info/{cid}", method = RequestMethod.GET)
+    @RequestMapping(value = "article/{cid}", method = RequestMethod.GET)
     public String gotoInfo(@PathVariable Integer cid, Map<String, Object> model) {
         Post post = postService.getPostContent(cid);
         model.put("post", post);
