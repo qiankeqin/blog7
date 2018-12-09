@@ -27,7 +27,7 @@
             <p class="con_info"><b>简介</b>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
             </p>
             <div class="con_text">
-                ${post.content}
+                <p id="pco"></p>
                 <p class="share"><b>转载：</b>感谢您对os7blue个人博客网站平台的认可，以及对我们原创作品以及文章的青睐，非常欢迎各位朋友分享到个人站长或者朋友圈，但转载请说明文章出处“来源杨青个人博客”。
                 </p>
                 <p><span class="diggit">很赞哦！ (74)</span></p>
@@ -154,4 +154,10 @@
         </div>
     </div>
 </article>
+<script>
+    var content ='${post.content}'; //使用el表达式获取后台返回的markdown内容
+    var converter = new showdown.Converter(); //初始化转换器
+    var htmlcontent  = converter.makeHtml(content); //将MarkDown转为html格式的内容
+    $("#pco").html(htmlcontent)；//添加到 div 中 显示出来
+</script>
 <#include "footer.ftl">
